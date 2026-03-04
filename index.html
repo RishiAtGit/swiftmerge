@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Download Gallery</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Container to stack the images vertically */
+        .gallery-container {
+            display: flex;
+            flex-direction: column; /* This arranges the cards one below another */
+            gap: 40px; /* Space between the two image sections */
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Styling for each image section */
+        .image-card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Image header styling */
+        .image-card h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+        }
+
+        /* The image itself */
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid #ddd;
+        }
+
+        /* The download button */
+        .download-btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery-container">
+        
+        <div class="image-card">
+            <h2>Swift USA</h2>
+            <img src="image2.jpeg" alt="Swift USA">
+            <a href="image2.jpeg" download="Swift USA" class="download-btn">
+                Download Image
+            </a>
+        </div>
+
+        <div class="image-card">
+            <h2>Swift Canada</h2>
+            <img src="image1.png" alt="Swift Canada">
+            <a href="image1.png" download="Swift Canada" class="download-btn">
+                Download Image
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
